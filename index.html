@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meteo app</title>
     <link rel="stylesheet" href="src/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +11,7 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <title>Meteo app</title>
     "
   </head>
   <body>
@@ -31,7 +31,7 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city">Paris</h1>
+            <h1 class="weather-app-city" id="city"></h1>
             <p class="weather-app-details">
               <span id="time"></span>,<span id="description"></span>
               <br />
@@ -41,8 +41,8 @@
             </p>
           </div>
           <div class="weather-app-temperature-container">
-            <div id="icon">
-              
+            <div id="icon"></div>
+
             <div class="weather-app-temperature" id="temperature">12</div>
             <div class="weather-app-unit">°C</div>
           </div>
