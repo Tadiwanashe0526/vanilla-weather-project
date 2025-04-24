@@ -43,7 +43,33 @@ main {
   justify-content: space-between;
 }
 .weather-app-city {
-  color: blue;
+  margin: 0;
+  font-size: 38px;
+  line-height: 48px;
+}
+
+.weather-app-details {
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(39, 33, 66, 0.4);
+}
+.weather-app-deatails strong {
+  color: pink;
+}
+.weather-app-temperature-container {
+  display: flex;
+}
+.weather-app-temperature {
+  font-size: 88px;
+  font-weight: bold;
+}
+.weather-app-icon {
+  font-size: 44px;
+  margin-top: 22px;
+}
+.weather-app-unit {
+  margin-top: 16px;
+  font-size: 28px;
 }
 footer {
   border-top: 1px solid blueviolet;
