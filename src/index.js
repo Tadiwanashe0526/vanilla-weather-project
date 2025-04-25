@@ -9,12 +9,12 @@ function refreshWeather(response) {
   let date = new Date(response.data.time * 1000);
   let iconElement = document.querySelector("#icon");
 
-  cityElement.innerhtml = response.data.city;
+  cityElement.innerHTML = response.data.city;
 
   descriptionElement.innerHTML = response.data.condition.description;
   timeElement.innerHTML = formatDate(date);
-  humidityElement.innerHTML = `$(response.data.temperature.humidity)%`;
-  windSpeedElement.innerHTML = `$(response.data.wind.speed}Km/hr`;
+  humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
+  windSpeedElement.innerHTML = `${response.data.wind.speed}Km/hr`;
   temperatureElement.innerHTML = Math.round(temperature);
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
 }
@@ -29,7 +29,7 @@ function formatDate(date) {
     "Wednesday",
     "Thursday",
     "Friday",
-    "Satruday",
+    "Saturday",
   ];
 
   let day = days[date.getDay()];
@@ -38,7 +38,7 @@ function formatDate(date) {
     minutes = `0${minutes}`;
   }
 
-  return `${day} ${time}:${minutes}`;
+  return `${day} ${hours}:${minutes}`;
 }
 
 function searchCity(city) {
@@ -54,7 +54,7 @@ function handleSearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
-let searchFormElement = document.querySelector("search-form");
+let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Paris");
