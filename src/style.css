@@ -23,7 +23,7 @@ header {
   border-radius: 6px;
   width: 80%;
   font-size: 16px;
-  padding: 15px 20px;
+  padding: 15px 30px;
 }
 .search-form-button {
   background-color: #885df1;
@@ -89,14 +89,18 @@ main {
   margin-bottom: 10px;
 }
 .weather-forecast-icon {
-  font-size: 38px;
-  text-align: center;
+  width: 88px;
+  height: 88px;
+  display: block;
+  margin: 0 auto;
 }
+
 .weather-forecast-temperatures {
   text-align: center;
   color: #f65282;
   display: flex;
   justify-content: center;
+  margin-top: 10px;
 }
 .weather-forecast-temperature {
   padding: 0 10%;
